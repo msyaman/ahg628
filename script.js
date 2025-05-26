@@ -30,16 +30,3 @@ function updateTime() {
 
 setInterval(updateTime, 100);
 updateTime();
-
-// Arka plan geçişleri
-const slideshow = document.querySelector(".slideshow");
-const imageCount = 10;
-let currentImage = 1;
-
-function changeBackground() {
-  slideshow.style.backgroundImage = `url('img/${currentImage}.jpg')`;
-  currentImage = (currentImage % imageCount) + 1;
-}
-
-changeBackground();
-setInterval(changeBackground, 5000);
