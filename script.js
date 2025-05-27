@@ -51,5 +51,13 @@ function playMusic() {
 document.getElementById("volume-slider").addEventListener("input", function () {
   const volume = parseFloat(this.value);
   const audio = document.getElementById("bg-music");
-  audio.volume = volume;
+
+  // Mobil uyumluluk için pause → volume → play taktiği
+  try {
+    audio.pause();
+    audio.volume = volume;
+    audio.play().catch(e => console.warn("Mobil volume play hatası:", e));
+  } catch (e) {
+    console.warn("Ses değiştirilemedi:", e);
+  }
 });
