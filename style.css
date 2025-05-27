@@ -9,17 +9,21 @@ body, html {
   overflow: hidden;
 }
 
-.grid-bg {
+.grid-container {
   position: fixed;
   top: 0;
   left: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
-  grid-auto-rows: minmax(10vh, auto);
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
   z-index: -1;
-  overflow: hidden;
+}
+
+.grid-bg {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33.33vw, 1fr));
+  grid-auto-rows: minmax(33.33vw, 1fr);
+  width: 100%;
 }
 
 .grid-bg img {
