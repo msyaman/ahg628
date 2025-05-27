@@ -8,30 +8,22 @@ body, html {
   background-color: #000;
 }
 
-.slideshow {
+.grid-bg {
   position: fixed;
   top: 0;
   left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-size: cover;
-  background-position: center;
-  animation: slideshow 50s infinite;
+  flex-wrap: wrap;
 }
 
-@keyframes slideshow {
-  0%    { background-image: url("img/1.jpg"); }
-  10%   { background-image: url("img/2.jpg"); }
-  20%   { background-image: url("img/3.jpg"); }
-  30%   { background-image: url("img/4.jpg"); }
-  40%   { background-image: url("img/5.jpg"); }
-  50%   { background-image: url("img/6.jpg"); }
-  60%   { background-image: url("img/7.jpg"); }
-  70%   { background-image: url("img/8.jpg"); }
-  80%   { background-image: url("img/9.jpg"); }
-  90%   { background-image: url("img/10.jpg"); }
-  100%  { background-image: url("img/1.jpg"); }
+.grid-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
