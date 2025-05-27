@@ -1,4 +1,3 @@
-
 const startDate = new Date("2024-01-26T08:00:00");
 
 function updateTime() {
@@ -41,3 +40,8 @@ function typeWriter() {
   }
 }
 typeWriter();
+
+function playMusic() {
+  const audio = document.getElementById("bg-music");
+  audio.play();
+}

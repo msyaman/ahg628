@@ -2,52 +2,26 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>01 AHG 628</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.png" />
 </head>
 <body>
   <div class="image-wall">
-    <img src="img/1.jpg" alt="g1">
-    <img src="img/2.jpg" alt="g2">
-    <img src="img/3.jpg" alt="g3">
-    <img src="img/4.jpg" alt="g4">
-    <img src="img/5.jpg" alt="g5">
-    <img src="img/6.jpg" alt="g6">
-    <img src="img/7.jpg" alt="g7">
-    <img src="img/8.jpg" alt="g8">
-    <img src="img/9.jpg" alt="g9">
-    <img src="img/10.jpg" alt="g10">
-    <img src="img/11.jpg" alt="g11">
-    <img src="img/12.jpg" alt="g12">
-    <img src="img/13.jpg" alt="g13">
-    <img src="img/14.jpg" alt="g14">
-    <img src="img/15.jpg" alt="g15">
-    <img src="img/16.jpg" alt="g16">
-    <img src="img/17.jpg" alt="g17">
-    <img src="img/18.jpg" alt="g18">
-    <img src="img/19.jpg" alt="g19">
-    <img src="img/20.jpg" alt="g20">
-    <img src="img/21.jpg" alt="g21">
-    <img src="img/22.jpg" alt="g22">
-    <img src="img/23.jpg" alt="g23">
-    <img src="img/24.jpg" alt="g24">
-    <img src="img/25.jpg" alt="g25">
-    <img src="img/26.jpg" alt="g26">
-    <img src="img/27.jpg" alt="g27">
-    <img src="img/28.jpg" alt="g28">
-    <img src="img/29.jpg" alt="g29">
-    <img src="img/30.jpg" alt="g30">
+    <!-- 30 görsel buraya otomatik gelecektir -->
+    <!-- Örnek 1 tanesi -->
+    <img src="img/1.jpg" alt="image" />
   </div>
+
   <div class="overlay">
     <h1 id="typed-text"></h1>
     <div id="time"></div>
-    <audio id="bg-audio" controls style="margin-top: 20px;">
-      <source src="ambiance.mp3" type="audio/mpeg" />
-      Tarayıcınız ses öğesini desteklemiyor.
-    </audio>
   </div>
+
+  <button onclick="playMusic()">Müziği Başlat</button>
+  <audio id="bg-music" src="ambiance.mp3" autoplay loop></audio>
+
   <script src="script.js"></script>
 </body>
 </html>
