@@ -43,5 +43,7 @@ typeWriter();
 
 function playMusic() {
   const audio = document.getElementById("bg-music");
-  audio.play();
+  audio.play().catch((e) => {
+    console.warn("Tarayıcı müzik çalmayı engelledi:", e);
+  });
 }
