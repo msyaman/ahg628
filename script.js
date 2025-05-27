@@ -1,5 +1,5 @@
 
-const startDate = new Date("2023-01-26T08:00:00");
+const startDate = new Date("2024-01-26T08:00:00");
 
 function updateTime() {
   const now = new Date();
@@ -30,3 +30,14 @@ function updateTime() {
 
 setInterval(updateTime, 100);
 updateTime();
+
+const text = "01 AHG 628 aramızdan ayrılalı geçen süre:";
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typed-text").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 75);
+  }
+}
+typeWriter();
