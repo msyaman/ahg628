@@ -64,3 +64,11 @@ h1 {
   cursor: pointer;
   font-size: 1rem;
 }
+
+#volume-slider {
+  position: fixed;
+  bottom: 70px;
+  left: 20px;
+  z-index: 10;
+  width: 150px;
+}

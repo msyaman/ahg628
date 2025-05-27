@@ -47,3 +47,9 @@ function playMusic() {
     console.warn("Tarayıcı müzik çalmayı engelledi:", e);
   });
 }
+
+document.getElementById("volume-slider").addEventListener("input", function () {
+  const volume = parseFloat(this.value);
+  const audio = document.getElementById("bg-music");
+  audio.volume = volume;
+});
